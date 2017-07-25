@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<query name="get_list_sys_list" comments="获取n条通用列表" >
+select * from v_sys_list LIMIT :from,:count 
+</query>
+<query name="get_sys_list" comments="通过id获取通用列表" >
+select * from v_sys_list where id=:id 
+</query>
+<query name="get_sys_list_by_code" comments="通过编号获取通用列表" >
+select * from v_sys_list where code=:code 
+</query>
+
+<query name="get_list_sys_operator" comments="获取n条操作员" >
+select * from v_sys_operator LIMIT :from,:count 
+</query>
+<query name="get_sys_operator" comments="通过id获取操作员" >
+select * from v_sys_operator where id=:id 
+</query>
+<query name="get_sys_operator_by_code" comments="通过编号获取操作员" >
+select * from v_sys_operator where code=:code 
+</query>
+
+<query name="get_list_sys_department" comments="获取n条组织机构" >
+select * from v_sys_department LIMIT :from,:count 
+</query>
+<query name="get_sys_department" comments="通过id获取组织机构" >
+select * from v_sys_department where id=:id 
+</query>
+<query name="get_sys_department_by_code" comments="通过编号获取组织机构" >
+select * from v_sys_department where code=:code 
+</query>
+
+<query name="get_list_sys_role" comments="获取n条角色" >
+select * from v_sys_role LIMIT :from,:count 
+</query>
+<query name="get_sys_role" comments="通过id获取角色" >
+select * from v_sys_role where id=:id 
+</query>
+
+<query name="get_list_sys_function" comments="获取n条功能模块" >
+select * from v_sys_function LIMIT :from,:count 
+</query>
+<query name="get_sys_function" comments="通过id获取功能模块" >
+select * from v_sys_function where id=:id 
+</query>
+<query name="get_sys_function_by_code" comments="通过编号获取功能模块" >
+select * from v_sys_function where code=:code 
+</query>
+
+<query name="get_list_sys_role2action" comments="获取n条角色功能" >
+select * from v_sys_role2action LIMIT :from,:count 
+</query>
+<query name="get_sys_role2action" comments="通过id获取角色功能" >
+select * from v_sys_role2action where id=:id 
+</query>
+
+<query name="get_list_sys_setting" comments="获取n条系统设置" >
+select * from v_sys_setting LIMIT :from,:count 
+</query>
+<query name="get_sys_setting" comments="通过id获取系统设置" >
+select * from v_sys_setting where id=:id 
+</query>
+
+<query name="get_list_sys_log" comments="获取n条系统日志" >
+select * from v_sys_log LIMIT :from,:count 
+</query>
+<query name="get_sys_log" comments="通过id获取系统日志" >
+select * from v_sys_log where id=:id 
+</query>
+
+<query name="get_list_sys_report" comments="获取n条统计报表管理" >
+select * from v_sys_report LIMIT :from,:count 
+</query>
+<query name="get_sys_report" comments="通过id获取统计报表管理" >
+select * from v_sys_report where id=:id 
+</query>
+<query name="get_sys_report_by_code" comments="通过编号获取统计报表管理" >
+select * from v_sys_report where code=:code 
+</query>
+
+<query name="get_list_sys_book" comments="获取n条帐套" >
+select * from v_sys_book LIMIT :from,:count 
+</query>
+<query name="get_sys_book" comments="通过id获取帐套" >
+select * from v_sys_book where id=:id 
+</query>
+
+<query name="get_list_patrol_area" comments="获取n条巡检区域" >
+select * from v_patrol_area LIMIT :from,:count 
+</query>
+<query name="get_patrol_area" comments="通过id获取巡检区域" >
+select * from v_patrol_area where id=:id 
+</query>
+<query name="get_patrol_area_by_code" comments="通过编号获取巡检区域" >
+select * from v_patrol_area where code=:code 
+</query>
+
+<query name="get_list_failure" comments="获取n条故障" >
+select * from v_failure LIMIT :from,:count 
+</query>
+<query name="get_failure" comments="通过id获取故障" >
+select * from v_failure where id=:id 
+</query>
+<query name="get_failure_by_code" comments="通过编号获取故障" >
+select * from v_failure where code=:code 
+</query>
+
+<query name="get_list_device" comments="获取n条设备" >
+select * from v_device LIMIT :from,:count 
+</query>
+<query name="get_device" comments="通过id获取设备" >
+select * from v_device where id=:id 
+</query>
+<query name="get_device_by_code" comments="通过编号获取设备" >
+select * from v_device where code=:code 
+</query>
+<query name="get_patrol_quota_by_target_code" comments="通过目标编号获取巡检指标" >
+select * from v_patrol_quota where target_code=:target_code 
+ </query>
+
+<query name="get_list_property_worker" comments="获取n条物业工人表" >
+select * from v_property_worker LIMIT :from,:count 
+</query>
+<query name="get_property_worker" comments="通过id获取物业工人表" >
+select * from v_property_worker where id=:id 
+</query>
+
+<query name="get_list_patrol_quota" comments="获取n条巡检指标" >
+select * from v_patrol_quota LIMIT :from,:count 
+</query>
+<query name="get_patrol_quota" comments="通过id获取巡检指标" >
+select * from v_patrol_quota where id=:id 
+</query>
+<query name="get_patrol_quota_by_code" comments="通过编号获取巡检指标" >
+select * from v_patrol_quota where code=:code 
+</query>
+
+<query name="get_list_patrol_course" comments="获取n条巡检路线" >
+select * from v_patrol_course LIMIT :from,:count 
+</query>
+<query name="get_patrol_course" comments="通过id获取巡检路线" >
+select * from v_patrol_course where id=:id 
+</query>
+<query name="get_patrol_course_by_code" comments="通过编号获取巡检路线" >
+select * from v_patrol_course where code=:code 
+</query>
+<query name="get_patrol_target_by_course_id" comments="通过路线编号获取巡检目标" >
+select * from v_patrol_target where course_id=:course_id 
+ </query>
+
+<query name="get_list_patrol_target" comments="获取n条巡检目标" >
+select * from v_patrol_target LIMIT :from,:count 
+</query>
+<query name="get_patrol_target" comments="通过id获取巡检目标" >
+select * from v_patrol_target where id=:id 
+</query>
+<query name="get_patrol_target_by_code" comments="通过编号获取巡检目标" >
+select * from v_patrol_target where code=:code 
+</query>
+
+<query name="get_list_patrol_sheet" comments="获取n条巡检工单" >
+select * from v_patrol_sheet LIMIT :from,:count 
+</query>
+<query name="get_patrol_sheet" comments="通过id获取巡检工单" >
+select * from v_patrol_sheet where id=:id 
+</query>
+<query name="get_patrol_target2sheet_by_sheet_id" comments="通过工单编号获取目标与工单" >
+select * from v_patrol_target2sheet where sheet_id=:sheet_id 
+ </query>
+<query name="get_patrol_records_by_sheet_id" comments="通过工单编号获取巡检记录" >
+select * from v_patrol_records where sheet_id=:sheet_id 
+ </query>
+
+<query name="get_list_patrol_target2sheet" comments="获取n条目标与工单" >
+select * from v_patrol_target2sheet LIMIT :from,:count 
+</query>
+<query name="get_patrol_target2sheet" comments="通过id获取目标与工单" >
+select * from v_patrol_target2sheet where id=:id 
+</query>
+
+<query name="get_list_patrol_records" comments="获取n条巡检记录" >
+select * from v_patrol_records LIMIT :from,:count 
+</query>
+<query name="get_patrol_records" comments="通过id获取巡检记录" >
+select * from v_patrol_records where id=:id 
+</query>
+
+<query name="get_list_patrol_project" comments="获取n条巡检计划" >
+select * from v_patrol_project LIMIT :from,:count 
+</query>
+<query name="get_patrol_project" comments="通过id获取巡检计划" >
+select * from v_patrol_project where id=:id 
+</query>
+<query name="get_patrol_course2project_by_project_id" comments="通过计划编号获取路线与计划" >
+select * from v_patrol_course2project where project_id=:project_id 
+ </query>
+<query name="get_patroller2project_by_project_id" comments="通过计划编号获取巡检员与计划" >
+select * from v_patroller2project where project_id=:project_id 
+ </query>
+<query name="get_patrol_sheet_by_project_id" comments="通过计划编号获取巡检工单" >
+select * from v_patrol_sheet where project_id=:project_id 
+ </query>
+
+<query name="get_list_patroller2project" comments="获取n条巡检员与计划" >
+select * from v_patroller2project LIMIT :from,:count 
+</query>
+<query name="get_patroller2project" comments="通过id获取巡检员与计划" >
+select * from v_patroller2project where id=:id 
+</query>
+
+<query name="get_list_patrol_course2project" comments="获取n条路线与计划" >
+select * from v_patrol_course2project LIMIT :from,:count 
+</query>
+<query name="get_patrol_course2project" comments="通过id获取路线与计划" >
+select * from v_patrol_course2project where id=:id 
+</query>
+
+</root>
